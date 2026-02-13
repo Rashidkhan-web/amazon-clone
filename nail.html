@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon – Nail Polish Product</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #eaeded;
+        color: #0f1111;
+    }
+
+    /* Header */
+    header {
+        background-color: #131921;
+        color: white;
+        padding: 15px 30px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    /* Main layout */
+    .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        background-color: white;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 0.8fr;
+        gap: 30px;
+        border-radius: 6px;
+    }
+
+    /* Product Image */
+    .image-box img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Product Info */
+    .product-info h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .rating {
+        color: #ffa41c;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 28px;
+        color: #b12704;
+        margin: 15px 0;
+    }
+
+    .desc {
+        font-size: 14px;
+        color: #565959;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .colors span {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        margin-right: 8px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    /* Buy Box */
+    .buy-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        height: fit-content;
+    }
+
+    .buy-box p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .stock {
+        color: #007600;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+
+    .buy-box button {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .add {
+        background-color: #ffd814;
+    }
+
+    .add:hover {
+        background-color: #f7ca00;
+    }
+
+    .buy {
+        background-color: #ffa41c;
+    }
+
+    .buy:hover {
+        background-color: #fa8900;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 13px;
+        color: #555;
+    }
+
+    @media (max-width: 900px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    amazon
+</header>
+
+<div class="container">
+
+    <!-- Image -->
+    <div class="image-box">
+        <img src="https://via.placeholder.com/500x500/f76fae/ffffff?text=Nail+Polish" alt="Nail Polish">
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-info">
+        <h1>HailPolish Gel Nail Polish – Long Lasting & Glossy Finish</h1>
+        <div class="rating">★★★★☆ 4.6 out of 5</div>
+
+        <div class="price">$12.99</div>
+
+        <p class="desc">
+            High-shine gel nail polish with a smooth, chip-resistant finish.
+            Perfect for everyday wear and special occasions.
+            Vegan, cruelty-free, and quick drying.
+        </p>
+
+        <p><strong>Color:</strong></p>
+        <div class="colors">
+            <span style="background:#d72660"></span>
+            <span style="background:#ff6f91"></span>
+            <span style="background:#ffc75f"></span>
+            <span style="background:#845ec2"></span>
+        </div>
+    </div>
+
+    <!-- Buy Box -->
+    <div class="buy-box">
+        <p><strong>Price:</strong> <span class="price">$12.99</span></p>
+        <p>FREE delivery Tomorrow</p>
+        <p class="stock">In Stock</p>
+
+        <button class="add">Add to Cart</button>
+        <button class="buy">Buy Now</button>
+
+        <p>Ships from Amazon</p>
+        <p>Sold by HailPolish</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Amazon-style product page (Demo only)
+</footer>
+
+</body>
+</html>

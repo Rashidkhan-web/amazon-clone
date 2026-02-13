@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon .pk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+   <style>/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.pak2{
+  font-size: 20px;
+}
+.delive{
+  padding-left: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+/* NAVBAR */
+nav {
+  background-color: black;
+  min-height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+
+/* LOGO */
+.amazon {
+  background-image: url(/amazon_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 70px;
+ 
+}
+.amazon:hover{
+   border: 1px solid white;
+
+}
+.return:hover{
+   border: 1px solid white;
+}
+.hello:hover{
+   border: 1px solid white;
+}
+a:hover{
+  border: 1px solid white;
+  background-color: orangered;
+}
+/*cart*/
+.carti{
+    width: 140px;
+    height: 40px;
+    margin-right: 20px;
+    font-size: 50px;
+    position: relative;
+    color: red;
+}
+.pak{
+  display: flex;
+  
+}
+
+/* DELIVERY */
+.deliver {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.deliver:hover{
+   border: 1px solid white;
+
+}
+
+/* SEARCH BAR */
+.content {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 10px;
+}
+
+select {
+  width: 60px;
+  border-radius: 5px 0 0 5px;
+  height: 40px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  height: 40px;
+ width:500px;
+}
+input[type="text"]:hover{
+  border: white solid transparent;
+  zoom: 0%;
+}
+.search {
+  background-color: orange;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 5px 5px 0;
+}
+
+/* LINKS */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* MENU */
+.menu {
+  background-color: rgb(20, 20, 75);
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 10px;
+}
+
+.me {
+  padding: 8px 12px;
+  font-size: 16px;
+  
+}
+
+/* SHOPPING SECTION */
+.shopping,
+.shopbox2,
+.shopbox3,
+.shopbox4,
+.shopbox5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ccc;
+  padding: 20px 0;
+  
+}
+
+/*  */
+.dollar{
+  font-size: 30px;
+  padding-left: 20px;
+  font-family:'Times New Roman', Times, serif
+}
+.stbtn{
+  text-align: center;
+  width: 170px;
+  height: 50px;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+  margin-top: 0px;
+  font-size: 30px;
+  margin-left: 50px;
+
+}
+.stbtn:hover{
+  background-color: black;
+  color: white;
+}
+
+/* PRODUCT BOX */
+.buys {
+  background-color: white;
+  width: 23%;
+  min-width: 250px;
+  height: 370px;
+  margin: 10px;
+  padding: 15px;
+}
+
+/* IMAGE */
+.img-box {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* FOOTER */
+.back {
+  background-color: #485769;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom {
+  background-color: #232F3E;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.bx {
+  width: 220px;
+  margin: 10px;
+  color: white;
+}
+
+/* FOOTER BOTTOM */
+.botom1 {
+  background-color: #232F3E;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+button {
+  background-color: #232F3E;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* TABLET */
+
+.poster{
+  width: 100%;
+  height: 380px;
+  background-image: url(/WhatsApp\ Image\ 2026-02-05\ at\ 8.09.45\ PM.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1400px;
+  
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+opacity: 1;
+scale: 1.1;
+  }
+}
+.buys{
+  animation:appear ;
+  
+  animation-timeline: view();
+  animation-range: entry 5% cover 100%;
+
+
+}
+ 
+button:hover{
+  background-color: red;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+</style>
+   <header>
+    <nav>
+        <div class="amazon"></div>
+        <div class="deliver">
+            <p class="delive">Deliver</p>
+            <div class="pak"> 
+               <div class="pak1"> <i class="fa-solid fa-location-dot"></i></div>
+                <div class="pak2"><p>Pakistan</p></div>
+            </div>
+        </div>
+        <!-- 1234567890 -->
+         <div class="content content1">
+         <div class="all">
+            <select name="">
+            <option value="#">All</option>
+            <option value="#">CAR</option>
+            <option value="#">WATCH</option>
+            <option value="#">CLOTH</option>
+            <option value="#">SHOES</option>
+            <option value="#">NAILS</option>
+            <option value="#">PERFUM</option>
+            </select>
+        </div>
+        <!-- 123456789 -->
+         <div class="input"> <input type="text" placeholder="Select favourite gift your dear"></div>
+         <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+        </div>
+        <!-- 123456789 -->
+         <div class="hello">
+            <a class="a" href="/index.html"> <p>Hello, Sign in </p></a>
+            <a href="/index.html"  class="a"> <h2>Accounts & lists </h2></a>
+         </div>
+         <!-- 2378 -->
+          <div class="return">
+            <p >Reutrn</p>
+            <h2>Return & Order</h2>
+
+          </div>
+          <!-- 123567890 -->
+          <div class="cart">
+            <span class="carti" ><i class="fa-solid fa-cart-arrow-down"></i></span>
+          
+          </div>
+    </nav>
+    <div class="picbox">
+
+    </div>
+    <!-- 123456789 -->
+     <!-- 123456789 -->
+      <div class="menu">
+        <a  class="me" href=""><i class="fa-solid fa-bars"></i></a>
+        <a href="" class="me">All</a>
+        <a href="#botom1" class="me">Today's Deals</a>
+        <a href="/prime.html" class="me">Prime video</a>
+        <a href="/registry.html" class="me"> Regisry</a>
+        <a href="/gift.html" class="me"> Gift cards</a>
+        <a href="/pcactise.html" class="me">Customer Services</a>
+        
+      </div>
+    </header>
+   <!-- 12345678 -->
+   </header>
+   <section> <div class="poster"></div></section>
+   <span class="brand">PREMIUM QUALITY</span>
+   <div class="shopping">
+
+  
+  
+<div class="by5 buys"><div class="adjust"><h2>HONDA</h2>
+<div class="img-box" style="background-image: url('/civic.png');"></div> see more  <br> <span class="dollar">$350000</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2>I PHONE</h2>
+<div class="img-box" style="background-image: url('/iphon.png');"></div> see more <br> <span class="dollar">$3890</span></div>
+<div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div> 
+<div class="by7 buys"><div class="adjust"><h2>DELL</h2>
+<div class="img-box" style="background-image: url('/laptop2.png');"></div> see more <br> <span class="dollar">$1500</span></div>
+<div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>PLASTIC BOTTLE</h2>
+<div class="img-box" style="background-image: url('/waterb1.png');"></div> see more <br> <span class="dollar">$7</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+   
+   <div class="shopbox2 shooping">
+       <div class="by1 buys">
+         
+    <div class="adjust"><h2>DOLLAR PEN</h2>
+<div class="img-box" style="background-image: url('/pen.png');"></div> see more <br> <span class="dollar">$5</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by2 buys"> <div class="adjust"><h2>BAG</h2>
+<div class="img-box" style="background-image: url('/bag3.png');"></div> see more <br> <span class="dollar">$20.05</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by3 buys"><div class="adjust"><h2>I PHONE16</h2>
+<div class="img-box" style="background-image: url('/iphone2.png');"></div> see more <br> <span class="dollar">$3020</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by4 buys"><div class="adjust"><h2>BUY</h2>
+<div class="img-box" style="background-image: url('/shoes.png');"></div> see more <br> <span class="dollar">$75</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+  
+<div class="by5 buys"><div class="adjust"><h2>HONDA CIVIC</h2>
+<div class="img-box" style="background-image: url('/civic1.png');"></div> see more <br> <span class="dollar">$15650</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2>CLOTH</h2>
+<div class="img-box" style="background-image: url('/cloths/cloth7.png');"></div> see more<br> <span class="dollar">$12</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by7 buys"><div class="adjust"><h2>HP LAPTOP</h2>
+<div class="img-box" style="background-image: url('/laptop3.png');"></div> see more <br> <span class="dollar">$250</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>W3C WATCH</h2>
+<div class="img-box" style="background-image: url('/watch1.png');"></div> see more <br> <span class="dollar">$95</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+    <div class="shopbox3 shooping">
+       <div class="by1 buys">
+    <div class="adjust"><h2>WOMEN</h2>
+<div class="img-box" style="background-image: url('/watsp.png');"></div> see more <br> <span class="dollar">$65</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by2 buys"> <div class="adjust"><h2>FRANGRANCE</h2>
+<div class="img-box" style="background-image: url('/fog2.png');"></div> see more <br> <span class="dollar">$25</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by3 buys"><div class="adjust"><h2>NAIL</h2>
+<div class="img-box" style="background-image: url('nail.png');"></div> see more <br> <span class="dollar">$5</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by4 buys"><div class="adjust"><h2>BMW</h2>
+<div class="img-box" style="background-image: url('bmw.png');"></div> see more <br> <span class="dollar">$89050</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+  
+<div class="by5 buys"><div class="adjust"><h2>CHAIN</h2>
+<div class="img-box" style="background-image: url('/chains.png');"></div> see more<br> <span class="dollar">$3.05</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2>DRESS</h2>
+<div class="img-box" style="background-image: url('/wome2.png');"></div> see more<br> <span class="dollar">$10.09</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by7 buys"><div class="adjust"><h2>J.S</h2>
+<div class="img-box" style="background-image: url('/trouser1.png');"></div> see more<br> <span class="dollar">$15</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>BNZ</h2>
+<div class="img-box" style="background-image: url('/bags.png');"></div> see more<br> <span class="dollar">$75</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+   <div class="shopbox4 shooping">
+       <div class="by1 buys">
+    <div class="adjust"><h2>ZAM </h2>
+<div class="img-box" style="background-image: url('/cloths/cloth.png');"></div> see more<br> <span class="dollar">$55</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by2 buys"> <div class="adjust"><h2>NEXS</h2>
+<div class="img-box" style="background-image: url('/for.png');"></div> see more<br> <span class="dollar">$85</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by3 buys"><div class="adjust"><h2>9T9</h2>
+<div class="img-box" style="background-image: url('shoes1.png');"></div> see more<br> <span class="dollar">$15</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by4 buys"><div class="adjust"><h2>BJK</h2>
+<div class="img-box" style="background-image: url('/waterb4.png');"></div> see more<br> <span class="dollar">$9</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+  
+<div class="by5 buys"><div class="adjust"><h2>IPHONE15</h2>
+<div class="img-box" style="background-image: url('/iphon.png');"></div> see more<br> <span class="dollar">$9050</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('/wspe.png');"></div> see more<br> <span class="dollar">$65</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by7 buys"><div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('/for1.png');"></div> see more<br> <span class="dollar">$850</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>BELOVED</h2>
+<div class="img-box" style="background-image: url('/rings3.png');"></div> see more<br> <span class="dollar">$9.5</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+    <div class="shopbox5 shooping">
+       <div class="by1 buys">
+    <div class="adjust"><h2>BUY IT</h2>
+<div class="img-box" style="background-image: url('/honda1.png');"></div> see more<br> <span class="dollar">$256500</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by2 buys"> <div class="adjust"><h2>HP</h2>
+<div class="img-box" style="background-image: url('/laptop4.png');"></div> see more<br> <span class="dollar">$750</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by3 buys"><div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('/cloths/clothw.png');"></div> see more<br> <span class="dollar">$3.99</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by4 buys"><div class="adjust"><h2>DOL PEN</h2>
+<div class="img-box" style="background-image: url('/pen1.png');"></div> see more<br> <span class="dollar">$3.08</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+  
+<div class="by5 buys"><div class="adjust"><h2>BATA</h2>
+<div class="img-box" style="background-image: url('/shoes3.png');"></div> see more<br> <span class="dollar">$45</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2>JACKSON</h2>
+<div class="img-box" style="background-image: url('/trouser.png');"></div> see more<br> <span class="dollar">$2.5</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by7 buys"><div class="adjust"><h2>BSD WATCH</h2>
+<div class="img-box" style="background-image: url('/watch4.png');"></div> see more<br> <span class="dollar">$59</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>JZ CHAIN</h2>
+<div class="img-box" style="background-image: url('/rig.png');"></div> see more <br> <span class="dollar">$85</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+   <!-- 1234567890- -->
+      <div class="shopbox5 shooping">
+       <div class="by1 buys">
+    <div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('wome2.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by2 buys"> <div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('/nova1.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by3 buys"><div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('cloths/cloth1.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by4 buys"><div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('/pen1.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+  
+<div class="by5 buys"><div class="adjust"><h2></h2>
+<div class="img-box" style="background-image: url('/for.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2></h2>
+<div class="img-box" style="background-image: url('wow.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by7 buys"><div class="adjust"><h2>HP</h2>
+<div class="img-box" style="background-image: url('/laptop4.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>DELLS</h2>
+<div class="img-box" style="background-image: url('/laptop3.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+   <!-- 1234567890987=========================================== -->
+      <div class="shopbox5 shooping">
+       <div class="by1 buys">
+    <div class="adjust"><h2>BUY CLOTHS</h2>
+<div class="img-box" style="background-image: url('/nsi.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by2 buys"> <div class="adjust"><h2>CITY</h2>
+<div class="img-box" style="background-image: url('civic1.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by3 buys"><div class="adjust"><h2>BLACK WOLF</h2>
+<div class="img-box" style="background-image: url('/cloths/clothw.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   <div class="by4 buys"><div class="adjust"><h2>PNY</h2>
+<div class="img-box" style="background-image: url('/pen1.png');"></div> see more<br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+  
+<div class="by5 buys"><div class="adjust"><h2>BKS</h2>
+<div class="img-box" style="background-image: url('/shoes3.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by6 buys"><div class="adjust"><h2>NIKE</h2>
+<div class="img-box" style="background-image: url('/trouser.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by7 buys"><div class="adjust"><h2>ITZ WATC</h2>
+<div class="img-box" style="background-image: url('/watch4.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+<div class="by8 buys"><div class="adjust"><h2>BOTTLE</h2>
+<div class="img-box" style="background-image: url('/waterb4.png');"></div> see more <br> <span class="dollar">$35</span></div><div class="shopb"><button class="stbtn"><i class="fa-solid fa-cart-arrow-down"></i></button></div></div>
+   </div>
+   <!-- 234567890asdfghjkzfxg  -->
+      <div class="shopbox5 shooping">
+    
+  
+
+   </div>
+     <section class="recent">
+        <h3> Your recently viewed items and featured recommendations</h3>
+        <p class="italic" > <i> After viewing product detail pages, look here to find an easy way to navigate back to pages you are interested in</i></p>
+     </section>
+     <section class="back"><h2>Back to top</h2></section>
+     <section class="bottom">
+        <div class="bx4 bx">
+           <h2>Get to Know Us</h2> <br>
+<a href="">career</a><br><br>
+<a href="#">Blog</a><br><br>
+ <a href="#">About Amazon</a><br><br>
+<a href="#">Investor Relations</a><br><br>
+<a href="#">Amazon Devices</a><br><br>
+<a href="#">Amazon Science</a>
+
+        </div>
+        <div class="bx4 bx">
+            <h2>Make Money with Us</h2><br><br>
+            <a href="">Sell products on Amazon</a><br><br>
+             <a href="">Sell on Amazon Business</a><br><br>
+              <a href="">Sell apps on Amazon</a><br><br>
+               <a href="">Become an Affiliate</a><br><br>
+                <a href="">Advertise Your Products</a><br><br>
+                 <a href="">Self-Publish with Us</a><br><br>
+                 <a href="">Host an Amazon Hub</a><br><br>
+                 <a href="">See More Make Money</a><br><br>
+                 <a href="">with Us</a>
+
+        </div>
+        <div class="bx4 bx">
+            <h2>	
+Amazon Payment Products</h2><br><br>
+<a href="">Amazon Business Card</a><br><br>
+<a href="">Shop with Points</a><br><br>
+<a href="">Reload Your Balance</a><br><br>
+<a href="">Amazon Currency Converter</a>
+
+        </div>
+        <div class="bx4 bx">
+            <h2>	
+Let Us Help You</h2><br><br>
+<a href="">Amazon and COVID-19</a><br><br>
+<a href="">Your Account</a><br><br>
+<a href="">Your Orders</a><br><br>
+<a href="">Shipping Rates & Policies</a><br><br>
+<a href="">Returns & Replacements</a><br><br>
+<a href="">Manage Your Content and Devices
+</a><br><br>
+<a href="">Help</a>
+
+        </div>
+     </section>
+     <section class="botom1" id="botom1">
+      
+        <div class="amazon2" ></div>
+        <div class="b1"><button> PKR  Pakistani Rupees</button></div>
+        <div class="b2"><button>English</button></div>
+        <div class="b3"> <button> <div><img src="/pak.png" width="20px" height="20px" alt="">
+         </div> <div><h3>Pakistan</h3></button> </div></div>
+     </section>
+     
+   </body>
+</html>

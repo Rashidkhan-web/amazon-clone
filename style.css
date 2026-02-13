@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #232f3e, #131921);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.login-container {
+    width: 900px;
+    height: 500px;
+    background: #fff;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Left login box */
+.login-box {
+    width: 50%;
+    padding: 50px;
+}
+
+.login-box h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #131921;
+}
+
+.login-box p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.login-box label {
+    font-size: 14px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #f3a847;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #f3a847;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #131921;
+    font-weight: bold;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.login-box button:hover {
+    background: #e59400;
+}
+
+.extra {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.extra a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+/* Right image box */
+.image-box {
+    width: 50%;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+}
+
+.overlay-text h3 {
+    font-size: 28px;
+}
+
+.overlay-text p {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    
+    .login-container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .login-box, .image-box {
+        width: 100%;
+    }
+
+    .image-box {
+        height: 250px;
+    }
+}
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0f171e; /* Prime Video Deep Blue */
+    color: white;
+}
+
+/* Transparent Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+/* Advanced Hero Banner */
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, #0f171e 10%, transparent), 
+                url('hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.play-btn {
+    padding: 12px 30px;
+    background-color: #00a8e1;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* "Mega" Hover Effect for Movie Cards */
+.movie-section {
+    padding: 40px 4%;
+}
+
+.movie-row {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.movie-card {
+    min-width: 250px;
+    height: 140px;
+    background: #1a242f;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}

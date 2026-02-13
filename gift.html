@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Gift Cards</title>
+    <style>:root {
+    --amz-dark: #131921;
+    --amz-orange: #FF9900;
+    --amz-blue: #007185;
+    --bg-light: #f3f3f3;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--amz-dark);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo { font-size: 24px; font-weight: bold; cursor: pointer; }
+.nav-links a { color: white; text-decoration: none; margin-left: 20px; font-size: 14px; }
+
+/* Hero Banner */
+.gift-hero {
+    background: linear-gradient(to right, #e3e6e6, #ffffff);
+    padding: 60px 5%;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-text h1 { font-size: 32px; margin-bottom: 10px; }
+
+.cta-btn {
+    background-color: var(--amz-orange);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Gift Card Grid */
+.card-section { padding: 40px 5%; }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.gc-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gc-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+/* Gift Card Visuals */
+.gc-image {
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.egift { background: linear-gradient(135deg, #232f3e, #37475a); }
+.physical { background: linear-gradient(135deg, #FF9900, #ffb347); }
+.print { background: linear-gradient(135deg, #007185, #00a8e1); }
+
+.gc-logo { border: 2px solid white; padding: 5px 15px; border-radius: 5px; }
+
+.shop-link {
+    display: block;
+    margin-top: 15px;
+    color: var(--amz-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.shop-link:hover { text-decoration: underline; color: #c45500; }</style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">amazon.in</div>
+        <div class="nav-links">
+            <a href="#">Gift Cards</a>
+            <a href="#">Registry</a>
+            <a href="#">Your Account</a>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="gift-hero">
+            <div class="hero-text">
+                <h1>Amazon Gift Cards</h1>
+                <p>The gift that keeps on giving. For any occasion.</p>
+                <button class="cta-btn">Shop All Cards</button>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <h2>Featured Gift Cards</h2>
+            <div class="card-grid">
+                
+                <div class="gc-item">
+                    <div class="gc-image egift">
+                        <span class="gc-logo">amazon</span>
+                    </div>
+                    <h3>eGift Cards</h3>
+                    <p>Send instantly via email or text.</p>
+                    <a href="#" class="shop-link">Send an eGift Card</a>
+                </div>
+
+                <div class="gc-item">
+                    <div class="gc-image physical">
+                        <span class="gc-logo">amazon</span>
+                    </div>
+                    <h3>Physical Gift Cards</h3>
+                    <p>Free One-Day Delivery on many cards.</p>
+                    <a href="#" class="shop-link">Shop Physical Cards</a>
+                </div>
+
+                <div class="gc-item">
+                    <div class="gc-image print">
+                        <span class="gc-logo">amazon</span>
+                    </div>
+                    <h3>Print at Home</h3>
+                    <p>Perfect for hand-delivery.</p>
+                    <a href="#" class="shop-link">Get Print-at-Home</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
